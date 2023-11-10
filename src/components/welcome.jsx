@@ -4,7 +4,7 @@ export default function Welcome() {
   return (
     <>
     <div className="welcome-area">
-      <div className="my-name">
+      <div className="introduction">
         <h2>
           Josh Sawyer
           <br/>
