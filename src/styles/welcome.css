@@ -1,5 +1,5 @@
 .welcome-area {
-  height: 90vh;
+  flex: 1;
   width: 100%;
   background-color: grey;
 

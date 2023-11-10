@@ -1,0 +1,9 @@
+.about-section {
+  flex: 1;
+  background-color: rgb(161, 161, 161);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
