@@ -1,8 +1,7 @@
-.details {
+.body-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  height: 2000px;
   width: 100%;
 }
