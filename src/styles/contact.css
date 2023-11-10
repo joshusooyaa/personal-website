@@ -1,9 +1,8 @@
-.about-section {
-  flex: 1;
+.contact-section {
   background-color: rgb(173, 173, 173);
 
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
