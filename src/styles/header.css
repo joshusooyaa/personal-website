@@ -10,6 +10,10 @@
 
   padding: 10px 20px;
   box-sizing: border-box;
+
+  backdrop-filter: blur(0);
+  border-bottom: 1px solid transparent;
+  transition: backdrop-filter 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
 }
 
 .header .contact-fields {
@@ -40,5 +44,7 @@
 .blurred {
   backdrop-filter: blur(50px);
   border-bottom: 1px solid;
+  
+  transition: backdrop-filter 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
 }
 
