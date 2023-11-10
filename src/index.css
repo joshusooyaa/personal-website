@@ -1,8 +1,9 @@
 body {
   width: 100vw;
-
+  height: auto;
   margin: 0;
   /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 :root {
@@ -13,3 +14,20 @@ body {
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 }
+
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #7e7e7e;
+  border-radius: 25px;
+}
+
+
+

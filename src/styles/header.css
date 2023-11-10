@@ -7,7 +7,19 @@
   position: fixed;
   gap: 20px;
 
-  background-color: grey;
-  backdrop-filter: blur(10px);
+  font-size: 20px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.resume {
+  margin-right: 20px;
+}
+
+.blurred {
+  backdrop-filter: blur(50px);
+  border-bottom: 1px solid;
 }
 
