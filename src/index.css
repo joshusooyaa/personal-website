@@ -1,7 +1,6 @@
 body {
   width: 100vw;
-  height: auto;
-  margin: 0;
+  height: 2000px;
   /* overflow: hidden; */
   overflow-x: hidden;
 }
@@ -13,6 +12,15 @@ body {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 0;
 }
 
 
