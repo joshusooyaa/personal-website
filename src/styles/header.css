@@ -42,6 +42,13 @@
 
 .contact-fields a img {
   height: 20px;
+
+  transition: transform 1.0s;
+}
+
+.contact-fields a img:hover {
+  transform: scale(1.2);
+  transition: transform 1.0s;
 }
 
 .header .navigation-fields {
