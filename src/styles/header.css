@@ -4,8 +4,7 @@
   display: flex;
   justify-content: space-between;
 
-  position: sticky;
-  top: 0;
+  position: fixed;
 
   font-size: 20px;
 
@@ -19,6 +18,10 @@
   visibility: hidden;
 
   align-items: center;
+}
+
+.resume {
+  margin-right: 20px;
 }
 
 .contact-fields a {
