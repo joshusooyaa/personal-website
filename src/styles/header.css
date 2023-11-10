@@ -2,20 +2,34 @@
   width: 100%;
 
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 
   position: fixed;
-  gap: 20px;
 
   font-size: 20px;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 
-.resume {
-  margin-right: 20px;
+.header .contact-fields {
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
+}
+
+.contact-fields a {
+  display: flex;
+}
+
+.contact-fields a img {
+  height: 20px;
+}
+
+.header .navigation-fields {
+  display: flex;
+  gap: 20px;
 }
 
 .blurred {
