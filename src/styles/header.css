@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+
+  display: flex;
+  justify-content: end;
+
+  position: fixed;
+  gap: 20px;
+
+  background-color: grey;
+  backdrop-filter: blur(10px);
+}
+
