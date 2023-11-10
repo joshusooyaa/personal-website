@@ -4,10 +4,12 @@ import '../styles/header.css'
 
 export default function Header() {
   const [isBlurred, setIsBlurred] = useState(false);
+  const [showName, setShowName] = useState(false);
 
   const handleScroll = () => {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
     setIsBlurred(scrollY > 1); // If greater than 1, set to blur, otherwise don't blur
+    setShowName(scrollY > 1);
   }
 
   useEffect(() => {
@@ -21,7 +23,7 @@ export default function Header() {
   
   return (
     <div className={isBlurred ? 'header blurred' : 'header'}>
-      <div className="contact-fields">
+      <div className={showName ? 'contact-fields visible' : 'contact-fields'}>
         <div className="name">Josh Sawyer</div>
         <a className="github" href="https://github.com/joshusooyaa"><img src="../../public/github-mark-white.svg" alt="github" /></a>
       </div>

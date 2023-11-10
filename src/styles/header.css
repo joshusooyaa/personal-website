@@ -19,9 +19,17 @@
 .header .contact-fields {
   display: flex;
   gap: 20px;
+  opacity: 0;
   visibility: hidden;
-
   align-items: center;
+
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.header .contact-fields.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s, visibility 0s;
 }
 
 .resume {
