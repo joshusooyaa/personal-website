@@ -60,3 +60,20 @@
 
   background-color: rgb(173, 173, 173);
 }
+
+.information .links {
+  display: flex;
+  justify-content: end;
+}
+
+.information .links img {
+  height: 20px;
+
+  transition: transform 1.0s;
+  margin-right: 20px;
+}
+
+.information .links img:hover {
+  transform: scale(1.2);
+  transition: transform 1.0s;
+}
