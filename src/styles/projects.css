@@ -45,6 +45,14 @@
   background-position: center;
 
   border-bottom: 2px solid black;
+
+  transition: transform 1.0s;
+}
+
+.display:hover {
+  transform: scale(1.05);
+  transition: transform 1.0s;
+  box-shadow: 0 0 10px black;
 }
 
 .wrapper .information {
