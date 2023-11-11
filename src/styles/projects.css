@@ -19,7 +19,6 @@
 }
 
 .wrapper {
-  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, auto);
@@ -30,6 +29,8 @@
   border-radius: 3px;
 
   box-shadow: 0 0 10px black;
+
+  margin-bottom: 30px;
 }
 
 .wrapper .display {
@@ -50,7 +51,7 @@
 }
 
 .display:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   transition: transform 1.0s;
   box-shadow: 0 0 10px black;
 }
