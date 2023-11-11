@@ -2,13 +2,15 @@ import SectionHeader from './section-header'
 
 import '../styles/projects.css'
 
-function Project() {
+import etchProjectImage from '../assets/etch-a-sketch.png'
+
+function Project( {image, description } ) {
   return (
     <div className="projects-container">
           <div className="project1 wrapper">
-            <div className="display"></div>
+            <div className="display" style={{backgroundImage: `url(${image}`}}></div>
             <div className="information">
-              <p>Description here</p>
+              <p>{description}</p>
               <div className="links">
               <a className="github" href="https://github.com/joshusooyaa"><img src="../../public/github-mark-white.svg" alt="github" /></a>
               <a className="live-preview" href="https://joshusooyaa.github.io/etch-a-sketch/"><img src="../../public/live-preview.png" alt="live preview" /></a>
@@ -24,10 +26,11 @@ function Project() {
 
 
 export default function Projects() {
+  
   return (
     <div className="projects-section">
       <SectionHeader title="Projects"/>
-      <Project />
+      <Project image={etchProjectImage} description="Description Here"/>
       <Project />
       <Project />
   
