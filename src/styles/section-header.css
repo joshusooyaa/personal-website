@@ -1,0 +1,16 @@
+.section-header {
+  margin: 0;
+  padding: 50px;
+  font-size: 80px;
+
+  line-height: 1;
+  text-align: center;
+
+  background-color: black;
+  width: 100%;
+}
+
+/* .section-underline {
+  border: 1.5px solid;
+  border-radius: 5px;
+} */

@@ -3,7 +3,32 @@
   background-color: rgb(173, 173, 173);
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 75%;
+}
+
+.section {
+  padding: 10px;
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.section:nth-child(odd) {
+  grid-column: 1 / span 3;
+}
+
+.section:nth-child(even) {
+  grid-column: 2 / span 3;
+}
+
+
+
