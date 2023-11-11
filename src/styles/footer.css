@@ -1,0 +1,31 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-container p {
+  margin: 5px;
+  line-height: 1;
+}
+
+.footer-container .links {
+  display: flex;
+  gap: 35px;
+}
+
+.footer-container a img {
+  height: 30px;
+
+  transition: transform 1.0s;
+}
+
+.footer-container a img:hover {
+  transform: scale(1.2);
+  transition: transform 1.0s;
+}
+
+.footer-container {
+  margin-bottom: 20px;
+}

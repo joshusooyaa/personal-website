@@ -9,6 +9,7 @@ function App() {
     <>
       <Header />
       <Body />
+      <hr className="footer-line"></hr>
       <Footer />
     </>
   )
