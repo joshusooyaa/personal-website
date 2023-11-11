@@ -5,4 +5,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  display: flex;
+  flex-direction: column;
 }
+
+.contact-info {
+  font-size: 40px;
+  margin-right: 350px;
+  margin-top: 50px;
+}
+
+.contact-info h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+.contact-info p {
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+
+
+

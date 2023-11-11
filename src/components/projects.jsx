@@ -33,7 +33,6 @@ export default function Projects() {
       <Project image={etchProjectImage} description="Description Here"/>
       <Project />
       <Project />
-  
     </div>
   )
 }
