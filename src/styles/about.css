@@ -10,9 +10,30 @@
 }
 
 .about-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 75%;
+  width: 80%;
+  display: flex;
+}
+
+.salutation {
+  flex: 1.5;
+
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+}
+
+.salutation h2 {
+  font-size: 80px;
+}
+
+.salutation .name {
+  align-self: center;
+  margin-top: 20px;
+}
+
+.abouts {
+  flex: 2;
 }
 
 .section {
@@ -20,14 +41,6 @@
   border: 2px solid rgb(240, 240, 240);
   border-radius: 5px;
   font-size: 25px;
-}
-
-.section:nth-child(odd) {
-  grid-column: 1 / span 3;
-}
-
-.section:nth-child(even) {
-  grid-column: 2 / span 3;
 }
 
 
