@@ -6,7 +6,7 @@
 
   position: fixed;
 
-  font-size: 20px;
+  font-size: 25px;
 
   padding: 10px 20px;
   box-sizing: border-box;
@@ -59,7 +59,7 @@
 }
 
 .blurred {
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid;
   
   transition: backdrop-filter 0.1s ease-in-out, border-bottom 0.5s ease-in-out;

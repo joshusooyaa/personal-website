@@ -1,16 +1,41 @@
 .section-header {
   margin: 0;
-  padding: 50px;
+  padding: 100px;
   font-size: 80px;
 
   line-height: 1;
   text-align: center;
 
-  background-color: black;
+  /* background-color: black; */
   width: 100%;
 
-  margin-bottom: 50px;
+  background-color: #292929;
+
+  position: relative;
+
+  box-sizing: border-box;
 }
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -12px;
+  height: 100px;
+  background: linear-gradient(transparent, #242424 15%, #292929);
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  background: linear-gradient(transparent, #292929 15%, #242424);
+}
+
 
 /* .section-underline {
   border: 1.5px solid;
