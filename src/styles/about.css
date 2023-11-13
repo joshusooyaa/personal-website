@@ -38,9 +38,26 @@
 
 .section {
   padding: 10px;
-  border: 2px solid rgb(240, 240, 240);
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 23px;
+  margin-top: 0;
+}
+
+.skills-container {
+  background-color: rgba(0, 0, 0, 0.295);
+  width: 60%;
+  height: 200px;
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  background-color: rgba(128, 128, 128, 0.096);
+  width: 80%;
+  height: 60%;
 }
 
 
