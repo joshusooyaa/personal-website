@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
 
-  gap: 200px;
+  gap: 100px;
 }
 
 .project {
@@ -34,7 +34,7 @@
   border-radius: 10px;
 }
 
-.information {
+.information-background {
   grid-column: 10 / -1;
   grid-row: 1 / -1; 
   background: linear-gradient(to top left, rgb(100, 100, 100), #242424);
@@ -43,5 +43,45 @@
   /* border: 2px solid #000000;
   border-radius: 3px; */
   box-shadow: 0 0 20px #141414;
+}
+
+.information-details {
+  grid-column: 11 / 20;
+  grid-row: 1 / -1;
+  z-index: 2;
+  margin-left: 30px;
+}
+
+.project-title {
+  font-size: 30px;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.project-description {
+  font-size: 19px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+
+  justify-content: end;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(to left, rgb(100, 100, 100), #242424);
+  border: 1px dashed white;
+}
+
+.project-links a img {
+  height: 25px;
+
+  transition: transform 1.0s;
+}
+
+.project-links a img:hover {
+  transform: scale(1.2);
+  transition: transform 1.0s;
 }
 
