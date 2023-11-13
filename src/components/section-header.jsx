@@ -4,7 +4,9 @@ export default function SectionHeader( {title} ) {
 
   return (
     <>
-      <h3 className="section-header">{title}</h3>
+      <div className="section-header">
+        <h3 className='title'>{title}</h3>
+      </div>
     </>
   )
 }

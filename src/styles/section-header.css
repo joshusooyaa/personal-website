@@ -1,6 +1,6 @@
 .section-header {
   margin: 0;
-  padding: 100px;
+  padding: 35px;
   font-size: 80px;
 
   line-height: 1;
@@ -21,9 +21,9 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: -12px;
-  height: 100px;
-  background: linear-gradient(transparent, #242424 15%, #292929);
+  top: 0;
+  height: 50%;
+  background: linear-gradient(#242424 15%, #292929);
 }
 
 .section-header::after {
@@ -32,12 +32,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100px;
-  background: linear-gradient(transparent, #292929 15%, #242424);
+  height: 50%;
+  background: linear-gradient(#292929 15%, #242424);
 }
 
-
-/* .section-underline {
-  border: 1.5px solid;
-  border-radius: 5px;
-} */
+.section-header .title {
+  position: relative;
+  z-index: 1;
+}
