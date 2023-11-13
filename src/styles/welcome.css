@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
 
-  background-image: linear-gradient(rgb(100, 100, 100), #242424), url('../../public/stars2.jpg');
+  background-image: linear-gradient(rgb(100, 100, 100), #242424);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
