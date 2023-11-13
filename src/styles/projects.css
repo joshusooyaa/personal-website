@@ -71,7 +71,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   background: linear-gradient(to left, rgb(100, 100, 100), #242424);
-  border: 1px dashed white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
+  border-radius: 10px;
 }
 
 .project-links a img {
