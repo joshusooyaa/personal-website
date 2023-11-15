@@ -39,4 +39,22 @@
 .section-header .title {
   position: relative;
   z-index: 1;
+  opacity: 0;
+}
+
+.section-header .title.active-section {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
