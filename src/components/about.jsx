@@ -1,4 +1,5 @@
 import SectionHeader from './section-header'
+import Skills from './skills'
 
 import '../styles/about.css'
 
@@ -22,7 +23,7 @@ export default function About() {
       </div>
       <div className="skills-container">
         <div className="skills">
-          
+          <Skills />
         </div>
       </div>
     </div>

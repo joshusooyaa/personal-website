@@ -26,7 +26,7 @@ function Project( {image, description } ) {
         </div>
         <div className="project-skills-container">
           <div className="project-skills">
-            
+          
           </div>
         </div>
       </div>
