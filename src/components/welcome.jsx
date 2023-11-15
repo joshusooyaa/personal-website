@@ -3,7 +3,7 @@ import '../styles/welcome.css'
 export default function Welcome() {
   return (
     <>
-    <div className="welcome-area">
+    <div name="top" className="welcome-area">
       <div className="introduction">
         <h2>
           Josh Sawyer
