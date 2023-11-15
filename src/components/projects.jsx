@@ -1,13 +1,17 @@
 import SectionHeader from './section-header'
 
+import Skills from './skills'
+import projectData from './project-data'
+
 import '../styles/projects.css'
 
-import etchProjectImage from '../assets/etch-a-sketch.png'
 import githubLogo from '../assets/github-mark-white.svg'
 import websiteLink from '../assets/live-preview.png'
 
 
-function Project( {image, description } ) {
+function Project( {image, skills, description, numToShow } ) {
+  console.log(skills)
+  
   return (
     <div className="project">
       <img className="project-image" src={image} alt="project image" />
@@ -26,7 +30,7 @@ function Project( {image, description } ) {
         </div>
         <div className="project-skills-container">
           <div className="project-skills">
-          
+            <Skills items={skills} numToShow={numToShow}/>
           </div>
         </div>
       </div>
@@ -40,8 +44,9 @@ export default function Projects() {
     <div className="projects-section">
       <SectionHeader title="Projects"/>
       <div className="projects-container">
-        <Project image={etchProjectImage} />
-        <Project image={etchProjectImage} />
+        {projectData.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
       </div>
     </div>
   )
