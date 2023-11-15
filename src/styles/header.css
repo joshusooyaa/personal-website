@@ -55,7 +55,17 @@
 
 .header .navigation-fields {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigation-fields a {
+  padding: 10px;
+  line-height: .5;
+  cursor: pointer;
+  transform: scale(1.0);
+  transition: transform 1.0s, background-color 1.0s, margin 1.0s;
+  border-radius: 5px;
 }
 
 .blurred {
@@ -65,3 +75,10 @@
   transition: backdrop-filter 0.1s ease-in-out, border-bottom 0.5s ease-in-out;
 }
 
+.active {
+  background-color: #ada5a57c;
+  transform: scale(1.05);
+  margin: 0 5px;
+  box-shadow: 0 0 5px rgb(51, 51, 51);
+  transition: transform 1.0s, background-color 1.0s ease, margin 1.0s;
+}
