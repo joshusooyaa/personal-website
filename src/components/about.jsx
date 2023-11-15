@@ -1,5 +1,5 @@
 import SectionHeader from './section-header'
-import Skills from './skills'
+import Skills from './skills'          
 
 import '../styles/about.css'
 

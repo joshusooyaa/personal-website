@@ -3,17 +3,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import '../styles/skills.css'
 
 export default function Skills( {items} ) {
-  items = [1, 2, 3, 4, 5, 6]
+  items = ["HELLO"]
   
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: items.length > 3,
     speed: 750,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: items.length > 3,
     autoplaySpeed: 4500,
     cssEase: "linear",
     arrows: false,
