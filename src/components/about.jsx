@@ -23,7 +23,7 @@ export default function About() {
       </div>
       <div className="skills-container">
         <div className="skills">
-          <Skills />
+          <Skills items={"all"} numToShow={7}/>
         </div>
       </div>
     </div>

@@ -2,9 +2,11 @@ import PropTypes from 'prop-types';
 import 'devicon';
 
 export default function Icon( { icon } ) {
-  <i className={`devicon-${icon}`}></i>
+  return (
+    <i className={`${icon}`}></i>
+  )
 }
 
-Icon.PropTypes = {
+Icon.propTypes = {
   icon: PropTypes.string.isRequired
 }
