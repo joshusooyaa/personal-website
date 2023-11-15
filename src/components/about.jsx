@@ -5,7 +5,7 @@ import '../styles/about.css'
 
 export default function About() {
   return (
-    <div className="about-section">
+    <div name="about" className="about-section">
       <SectionHeader title="About" />
       <div className="about-container">
         <div className="salutation">

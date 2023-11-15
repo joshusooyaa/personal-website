@@ -41,7 +41,7 @@ function Project( {image, skills, description, numToShow } ) {
 export default function Projects() {
   
   return (
-    <div className="projects-section">
+    <div name="projects" className="projects-section">
       <SectionHeader title="Projects"/>
       <div className="projects-container">
         {projectData.map((project, index) => (

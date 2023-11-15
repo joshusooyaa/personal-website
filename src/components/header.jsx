@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll'
 
 import '../styles/header.css'
 
@@ -28,10 +29,10 @@ export default function Header() {
         <a className="github" href="https://github.com/joshusooyaa"><img src="../../public/github-mark-white.svg" alt="github" /></a>
       </div>
       <div className="navigation-fields">
-        <div className="about">About</div>
-        <div className="projects">Projects</div>
-        <div className="contact">Contact</div>
-        <div className="resume">Resume</div>
+        <Link to="about" spy={true} smooth={true} duration={800}>About</Link>
+        <Link to="projects" spy={true} smooth={true} duration={800}>Projects</Link>
+        <Link to="contact" spy={true} smooth={true} duration={800}>Contact</Link>
+        <div className="resume-link">Resume</div>
       </div>
     </div>
   )
