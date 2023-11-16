@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom'
 
 import '../styles/header.css'
 
@@ -32,7 +33,8 @@ export default function Header() {
         <Link to="about" spy={true} smooth={true} duration={800} offset={-150}>About</Link>
         <Link to="projects" spy={true} smooth={true} duration={800} offset={-150}>Projects</Link>
         <Link to="contact" spy={true} smooth={true} duration={800} offset={-150}>Contact</Link>
-        <div className="resume-link">Resume</div>
+        {/* <div className="resume-link">Resume</div> */}
+        <RouterLink to="resume">Resume</RouterLink>
       </div>
     </div>
   )
