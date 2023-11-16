@@ -50,6 +50,9 @@
   grid-row: 1 / -1;
   z-index: 2;
   margin-left: 30px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .project-title {
@@ -70,7 +73,7 @@
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: linear-gradient(to left, rgb(100, 100, 100), #242424);
+  background: linear-gradient(to left, rgba(176, 180, 185, 0.363), #242424);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
   border-radius: 10px;
 }
@@ -85,4 +88,24 @@
   transform: scale(1.2);
   transition: transform 1.0s;
 }
+
+.project-skills-container {
+  height: 110px;
+  background: linear-gradient(to bottom left, rgba(197, 197, 197, 0.068), rgba(46, 46, 46, 0.637));
+  margin-bottom: 35px;
+  box-shadow: 0 0 10px rgb(36, 36, 36);
+  border-radius: 5px;
+}
+
+.information-details hr {
+  width: 100%;
+}
+
+.project-skills {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
 

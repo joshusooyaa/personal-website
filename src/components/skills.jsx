@@ -12,13 +12,13 @@ export default function Skills( {items="all", numToShow=7} ) {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 750,
+    speed: 500,
     slidesToShow: numToShow,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4500,
+    autoplaySpeed: 6000,
     cssEase: "linear",
-    arrows: false,
+    
   }
 
   items = (items == 'all') ? Object.keys(skillsDict) : items;
@@ -27,7 +27,7 @@ export default function Skills( {items="all", numToShow=7} ) {
     <div style={{ width: '100%' }}>
       <Slider {...settings}>
         {items.map((item, index) => (
-          <div className="skill" key={index}>
+          <div className="skill and" key={index}>
             <Icon icon={skillsDict[item]}/>
           </div>
         ))}

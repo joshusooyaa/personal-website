@@ -19,19 +19,19 @@ function Project( {image, skills, description, numToShow } ) {
       <div className="information-details">
         <h3 className="project-title">
           Etch A Sketch
+          <hr></hr>
         </h3>
-        <hr></hr>
         <p className="project-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
-        <div className="project-links">
-          <a href=""><img src={githubLogo} alt="github link" /></a>
-          <a href=""><img src={websiteLink} alt="live link" /></a>
-        </div>
         <div className="project-skills-container">
           <div className="project-skills">
             <Skills items={skills} numToShow={numToShow}/>
           </div>
+        </div>
+        <div className="project-links">
+          <a href=""><img src={githubLogo} alt="github link" /></a>
+          <a href=""><img src={websiteLink} alt="live link" /></a>
         </div>
       </div>
     </div>
