@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Resume from "./components/resume";
+import MoreAbout from "./components/more-about";
 
 export default function Router() {
   const router = createBrowserRouter([
@@ -12,6 +13,10 @@ export default function Router() {
     {
       path: "/resume",
       element: <Resume />,
+    },
+    {
+      path: "/about",
+      element: <MoreAbout />,
     }
   ]);
 
