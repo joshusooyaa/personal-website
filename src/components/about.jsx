@@ -19,8 +19,17 @@ export default function About() {
             </h2>
           </div>
           <div className="abouts">
-            <p className="section intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p className="section interests">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p>
+            <p className="section intro">
+            I'm currently a student at the University of Oregon, 
+            seeking my Bachelors of Science in Computer Science. 
+            I love the challenge this area provides and feel its perfect for me 
+            due to the constant rise of new technologies allowing for an endless opportunity to learn new things.
+            </p>
+            <p className="section interests">
+              I'm an avid climber, I love bouldering and most things outdoors. I have a passion for learning languages, and I'm currently
+              learning Japanese. I also really enjoy helping people in these areas since I want help anyone who's interested in seeing why it I'm interested in the things 
+              I do.
+            </p>
           </div>
         </div>
         <div className="more-about-container">
