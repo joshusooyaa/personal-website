@@ -64,6 +64,7 @@
 
 .project-description {
   font-size: 19px;
+  flex: 2;
 }
 
 .project-links {
