@@ -5,33 +5,33 @@ import projectData from './project-data'
 
 import '../styles/projects.css'
 
-import githubLogo from '../assets/github-mark-white.svg'
-import websiteLink from '../assets/live-preview.png'
 
-
-function Project( {image, skills, description, numToShow } ) {
-  console.log(skills)
+function Project(props) {
+  console.log(props.skills)
   
   return (
     <div className="project">
-      <img className="project-image" src={image} alt="project image" />
+      <img className="project-image" src={props.image} alt="project image" />
       <div className="information-background"></div>
       <div className="information-details">
         <h3 className="project-title">
-          Etch A Sketch
+          {props.title}
           <hr></hr>
         </h3>
         <p className="project-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          {props.description}
         </p>
         <div className="project-skills-container">
           <div className="project-skills">
-            <Skills items={skills} numToShow={numToShow}/>
+            <Skills items={props.skills} numToShow={props.numToShow}/>
           </div>
         </div>
         <div className="project-links">
-          <a href=""><img src={githubLogo} alt="github link" /></a>
-          <a href=""><img src={websiteLink} alt="live link" /></a>
+          {props.links.map(link => (
+            <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">
+              <img src={link.imgSrc} alt={link.alt} />
+            </a>
+          ))}
         </div>
       </div>
     </div>
