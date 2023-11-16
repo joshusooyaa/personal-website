@@ -1,9 +1,8 @@
 body {
   width: 100vw;
-  height: 2000px;
   margin: 0;
-  /* overflow: hidden; */
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 :root {
@@ -46,5 +45,6 @@ a {
   font-weight: normal;
   line-height: 1;
 }
+
 
 
