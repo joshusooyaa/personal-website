@@ -1,7 +1,7 @@
 import '../styles/footer.css'
 import { Link } from 'react-scroll'
 
-import githubLogo from '../assets/github-mark-white'
+import githubLogo from '../assets/github-mark-white.svg'
 
 export default function Footer() {
 

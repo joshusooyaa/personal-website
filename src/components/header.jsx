@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom'
 
 import '../styles/header.css'
-import githubLogo from '../assets/github-mark-white'
+import githubLogo from '../assets/github-mark-white.svg'
 
 export default function Header() {
   const [isBlurred, setIsBlurred] = useState(false);
