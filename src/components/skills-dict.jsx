@@ -15,6 +15,7 @@ const skillsDict = {
   github: "devicon-github-original-wordmark colored",
   git: "devicon-git-plain-wordmark colored",
   linux: "devicon-linux-plain colored",
+  pytorch: "devicon-pytorch-plain-wordmark colored",
 };
 
 export default skillsDict;

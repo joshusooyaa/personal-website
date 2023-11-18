@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom'
 
 import '../styles/header.css'
+import githubLogo from '../assets/github-mark-white'
 
 export default function Header() {
   const [isBlurred, setIsBlurred] = useState(false);
@@ -27,7 +28,7 @@ export default function Header() {
     <div className={isBlurred ? 'header blurred' : 'header'}>
       <div className={showName ? 'contact-fields visible' : 'contact-fields'}>
         <div className="name">Josh Sawyer</div>
-        <a className="github" href="https://github.com/joshusooyaa"><img src="../../public/github-mark-white.svg" alt="github" /></a>
+        <a className="github" href="https://github.com/joshusooyaa"><img src={githubLogo} alt="Link to Github" /></a>
       </div>
       <div className="navigation-fields">
         <Link to="about" spy={true} smooth={true} duration={800} offset={-150}>About</Link>
