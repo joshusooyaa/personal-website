@@ -1,0 +1,23 @@
+.more-about-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-about-page .header {
+  position: fixed;
+  left: 0;
+}
+
+.more-about-page .about-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.back-button {
+  border: 1px solid grey;
+}
+
+.back-button:hover {
+  background-color: grey;
+}
