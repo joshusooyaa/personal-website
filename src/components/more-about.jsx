@@ -4,6 +4,14 @@ import githubLogo from '../assets/github-mark-white.svg'
 
 import '../styles/more-about.css'
 
+function Section() {
+  return (
+    <div className="info-section">
+      <p className="text-area">This is where I will talk about myself</p>
+      <img src={githubLogo} alt="Img here" />
+    </div>
+  )
+}
 
 export default function MoreAbout() {
   return (
@@ -18,7 +26,8 @@ export default function MoreAbout() {
         </div>
       </div>
       <div className="about-container">
-        Coming soon
+        <Section/>
+        <Section/>
       </div>
     </div>
   )
