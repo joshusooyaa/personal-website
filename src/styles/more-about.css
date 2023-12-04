@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-  gap: 30px;
+  gap: 75px;
 }
 
 .back-button {
@@ -27,10 +27,15 @@
   margin: 0 250px;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(10, 1fr);
 }
 
 .info-section .text-area {
   margin: 0;
+}
+
+.info-section img {
+  width: 650px;
 }
 
 .about-container .info-section:nth-child(odd) .text-area {
@@ -39,7 +44,7 @@
 }
 
 .about-container .info-section:nth-child(odd) img {
-  grid-column: 11 / 21;
+  grid-column: 12 / 21;
   grid-row: 1 / 11;
 }
 
