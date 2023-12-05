@@ -19,12 +19,9 @@
   gap: 75px;
 }
 
-.back-button {
-  border: 1px solid grey;
-}
-
 .back-button:hover {
-  background-color: grey;
+  transform: scale(1.1);
+  transition: transform .5s ease-in-out;
 }
 
 .info-section {

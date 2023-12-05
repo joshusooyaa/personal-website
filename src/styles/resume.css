@@ -1,3 +1,103 @@
-.go-back {
-  color: black;
+header h1 {
+  font-size: 60px;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+header .contact-info {
+  margin: 0;
+  font-size: 20px;
+}
+
+.info-container {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.info-container .degree {
+  display: flex;
+  justify-content: space-between;
+}
+
+.degree p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.university {
+  margin: 0;
+}
+
+.resume-section {
+  margin-bottom: 30px;
+}
+
+.course-work p {
+  font-weight: bold;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.work-experience ul {
+  margin: 0;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-list ul {
+  margin: 0;
+}
+
+.resume-footer {
+  margin-bottom: 50px;
+}
+
+.language-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.language-info p{
+  margin: 0;
+}
+
+.resume-download {
+  border: 1px solid white;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+  transition: background-color, 1s;
+  font-size: 25px;
+
+  margin: 50px;
+}
+
+.resume-download:hover {
+  background-color: rgb(54, 54, 54);
+  transform: scale(1.05);
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+  transition: background-color 1s, transform 1s ease-in-out, box-shadow 1s;
+}
+
+.download {
+  color: white;
+}
+
+.navigation-fields img {
+  height: 40px;
+}
+
+.header .back-button {
+  padding: 0;
+  padding-right: 15px;
 }

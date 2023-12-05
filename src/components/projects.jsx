@@ -7,8 +7,6 @@ import '../styles/projects.css'
 
 
 function Project(props) {
-  console.log(props.skills)
-  
   return (
     <div className="project">
       <img className="project-image" src={props.image} alt="project image" />

@@ -18,21 +18,25 @@ export default function Router() {
       path: "/",
       element: (
         <>
-        <ToTop/>
-        <App />,
+          <ToTop/>
+          <App />,
         </>),
       errorElement: <App />,
     },
     {
       path: "/resume",
-      element: <Resume />,
+      element: (
+      <>
+        <ToTop/>
+        <Resume/>
+      </>),
     },
     {
       path: "/about",
       element: (
         <>
-        <ToTop />
-        <MoreAbout/>
+          <ToTop />
+          <MoreAbout/>
         </>),
     }
   ]);

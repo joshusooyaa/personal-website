@@ -9,6 +9,7 @@ import climbingImg from '../assets/about-images/climbing.jpeg'
 import japaneseImg from '../assets/about-images/japanese.jpg'
 
 import githubLogo from '../assets/github-mark-white.svg'
+import backButton from '../assets/back-button.svg'
 
 import '../styles/more-about.css'
 
@@ -52,23 +53,23 @@ function Section( {text, image} ) {
 export default function MoreAbout() {
   return (
     <div className="more-about-page">
-      <SectionHeader title="About Me"/>
       <div className="header blurred">
         <div className="contact-fields visible">
           <div className="name">Josh Sawyer</div>
           <a className="github" href="https://github.com/joshusooyaa"><img src={githubLogo} alt="Link to Github" /></a>
         </div>
         <div className="navigation-fields">
-          <Link className="back-button" to="/">Back</Link>
+        <Link to="/" className="back-button"><img src={backButton} alt="back" /></Link>
         </div>
       </div>
+      <SectionHeader title="About Me"/>
       <div className="about-container">
         {aboutData.map((sectionInfo, index) => (
           <Section key={index} text={sectionInfo.text} image={sectionInfo.image}/>
         ))}
       </div>
       <div className='footer'>
-        <Link className="bottom-back-button" to="/">Back</Link>
+        <Link to="/" className="bottom-back-button">Back</Link>
       </div>
     </div>
     
