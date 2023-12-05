@@ -48,6 +48,10 @@
   transition: transform 1.0s;
 }
 
+.contact-fields .linkedin img {
+  height: 30px;
+} 
+
 .contact-fields a img:hover {
   transform: scale(1.2);
   transition: transform 1.0s;

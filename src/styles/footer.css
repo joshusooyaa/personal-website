@@ -15,6 +15,11 @@
 .footer-container .links {
   display: flex;
   gap: 35px;
+  align-items: center;
+}
+
+.footer-container .links .linkedin img {
+  height: 45px;
 }
 
 .footer-container a img {

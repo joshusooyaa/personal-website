@@ -6,6 +6,7 @@ import resumePDF from '../assets/resume/JoshSawyerResume.pdf'
 import githubLogo from '../assets/github-mark-white.svg'
 import downloadIcon from '../assets/download.svg'
 import backButton from '../assets/back-button.svg'
+import linkedinLogo from '../assets/linkedin.svg'
 
 const courseWorkList = [
   {
@@ -94,6 +95,7 @@ export default function Resume() {
       <div className="contact-fields visible">
         <div className="name">Josh Sawyer</div>
         <a className="github" href="https://github.com/joshusooyaa"><img src={githubLogo} alt="Link to Github" /></a>
+        <a className="linkedin" href="https://www.linkedin.com/in/josh-sawyer-3b4457263/"><img src={linkedinLogo} alt="Link To LinkedIn profile" /></a>
         <a className="download" href={resumePDF} download><img src={downloadIcon} alt="Link to Github" /></a>
       </div>
       <div className="navigation-fields">

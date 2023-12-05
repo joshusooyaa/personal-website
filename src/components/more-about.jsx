@@ -10,6 +10,7 @@ import japaneseImg from '../assets/about-images/japanese.jpg'
 
 import githubLogo from '../assets/github-mark-white.svg'
 import backButton from '../assets/back-button.svg'
+import linkedinLogo from '../assets/linkedin.svg'
 
 import '../styles/more-about.css'
 
@@ -57,6 +58,7 @@ export default function MoreAbout() {
         <div className="contact-fields visible">
           <div className="name">Josh Sawyer</div>
           <a className="github" href="https://github.com/joshusooyaa"><img src={githubLogo} alt="Link to Github" /></a>
+          <a className="linkedin" href="https://www.linkedin.com/in/josh-sawyer-3b4457263/"><img src={linkedinLogo} alt="Link To LinkedIn profile" /></a>
         </div>
         <div className="navigation-fields">
         <Link to="/" className="back-button"><img src={backButton} alt="back" /></Link>
