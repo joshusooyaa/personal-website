@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+.image-of-me {
+  width: 400px;
+}
+
 .about-area {
   width: 80%;
   max-width: 2000px;
@@ -21,7 +25,7 @@
   width: 100%;
   display: flex;
 }
-
+/* 
 .salutation {
   flex: 1.5;
 
@@ -29,6 +33,17 @@
   flex-direction: column;
 
   align-self: center;
+} */
+
+.salutation {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+}
+
+.salutation .image-of-me {
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px black;
 }
 
 .salutation h2 {
