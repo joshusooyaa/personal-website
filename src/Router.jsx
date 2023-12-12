@@ -19,7 +19,7 @@ export default function Router() {
       element: (
         <>
           <ToTop/>
-          <App />,
+          <App />
         </>),
       errorElement: <App />,
     },
@@ -29,7 +29,7 @@ export default function Router() {
       <>
         <ToTop/>
         <Resume/>
-      </>),
+      </>)
     },
     {
       path: "/about",
@@ -37,7 +37,7 @@ export default function Router() {
         <>
           <ToTop />
           <MoreAbout/>
-        </>),
+        </>)
     }
   ]);
 

@@ -112,3 +112,55 @@
 
 
 
+@media only screen and (max-width: 1300px) {
+
+
+  .project {
+    /* Adjust grid layout for smaller screens */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+  }
+
+  .project-image {
+    grid-column: 1 / -1;
+    grid-row: 1 / 11;
+  }
+
+  .information-background {
+    grid-column: 1 / -1;
+    grid-row: 11 / -1;
+  }
+
+  .information-details {
+    grid-column: 1 / -1;
+    grid-row: 11 / -1;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-title {
+    font-size: 2em; /* Adjust font size */
+  }
+
+  .project-description {
+    font-size: 1.2em; /* Adjust font size */
+  }
+
+  .project-links {
+    width: 80%;
+  }
+
+  .project-links a img {
+    height: 30px; /* Adjust icon size */
+  }
+
+  .project-skills-container {
+    height: 90px; /* Adjust container height */
+    width: 80%;
+  }
+
+}
+

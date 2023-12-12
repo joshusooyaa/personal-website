@@ -9,10 +9,6 @@
   width: 100%;
 }
 
-.image-of-me {
-  width: 400px;
-}
-
 .about-area {
   width: 80%;
   max-width: 2000px;
@@ -25,25 +21,18 @@
   width: 100%;
   display: flex;
 }
-/* 
-.salutation {
-  flex: 1.5;
-
-  display: flex;
-  flex-direction: column;
-
-  align-self: center;
-} */
 
 .salutation {
   flex: 1.5;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .salutation .image-of-me {
   border-radius: 4px;
   box-shadow: 2px 2px 5px black;
+  height: 600px;
 }
 
 .salutation h2 {
@@ -114,4 +103,31 @@
 }
 
 
+
+@media only screen and (max-width: 1000px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .salutation .image-of-me {
+    height: 300px; /* Adjust as needed */
+  }
+
+  .salutation h2 {
+    font-size: 40px; /* Adjust font size */
+  }
+
+  .abouts {
+    margin-top: 30px;
+  }
+
+  .abouts .section {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .skills {
+    width: 100%;
+  }
+}
 
