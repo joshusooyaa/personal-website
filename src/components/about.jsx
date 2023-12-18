@@ -68,7 +68,7 @@ export default function About() {
           </div>
         </div>
         <div className="more-about-container">
-          <Link to="about" className="more-about-link">Get to know me more<span>➔</span></Link>
+          <Link to="personal-website/about" className="more-about-link">Get to know me more<span>➔</span></Link>
         </div>
       </div>
       <div className="skills-container">

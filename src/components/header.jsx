@@ -37,7 +37,7 @@ export default function Header() {
         <Link to="projects" spy={true} smooth={true} duration={800} offset={-150}>Projects</Link>
         <Link to="contact" spy={true} smooth={true} duration={800} offset={-150}>Contact</Link>
         {/* <div className="resume-link">Resume</div> */}
-        <RouterLink to="resume">Resume</RouterLink>
+        <RouterLink to="personal-website/resume">Resume</RouterLink>
       </div>
     </div>
   )

@@ -24,7 +24,7 @@ export default function Router() {
       errorElement: <App />,
     },
     {
-      path: "/resume",
+      path: "personal-website/resume",
       element: (
       <>
         <ToTop/>
@@ -32,7 +32,7 @@ export default function Router() {
       </>)
     },
     {
-      path: "/about",
+      path: "personal-website/about",
       element: (
         <>
           <ToTop />
