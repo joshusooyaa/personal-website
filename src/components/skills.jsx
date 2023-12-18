@@ -18,7 +18,6 @@ export default function Skills( {items="all", numToShow=7} ) {
     autoplay: true,
     autoplaySpeed: 6000,
     cssEase: "linear",
-    
   }
 
   items = (items == 'all') ? Object.keys(skillsDict) : items;
