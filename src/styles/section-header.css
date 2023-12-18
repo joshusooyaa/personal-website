@@ -58,3 +58,23 @@
     transform: translateY(0);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 50px;
+    font-size: 1em;
+    padding-right: 5px;
+  }
+
+  .header .contact-fields .name {
+    display: none;
+  }
+
+  .header .navigation-fields {
+    gap: 0;
+  }
+
+  .header .contact-fields {
+    gap: 10px;
+  }
+}
