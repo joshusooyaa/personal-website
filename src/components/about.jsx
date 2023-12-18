@@ -1,12 +1,40 @@
 import SectionHeader from './section-header'
 import Skills from './skills' 
-import { Link } from 'react-router-dom'         
+import { Link } from 'react-router-dom'        
+
+import { useState, useEffect } from 'react';
 
 import selfImg from '../assets/josh.jpg'
 
 import '../styles/about.css'
 
 export default function About() {
+  const [numToShow, setNumToShow] = useState(getNumToShow(window.innerWidth));
+
+  function getNumToShow(width) {
+    if (width < 600) {
+      return 3;
+    }
+    else if (width < 1200) {
+      return 5;
+    }
+    else {
+      return 7;
+    }
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      setNumToShow(getNumToShow(window.innerWidth));
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
   return (
     <div name="about" className="about-section">
       <SectionHeader title="About" />
@@ -45,7 +73,7 @@ export default function About() {
       </div>
       <div className="skills-container">
         <div className="skills">
-          <Skills items={"all"} numToShow={7}/>
+          <Skills items={"all"} numToShow={numToShow}/>
         </div>
       </div>
     </div>
